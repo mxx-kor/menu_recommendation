@@ -10,11 +10,6 @@ function changeTitle() {
     document.querySelector('h1').textContent = "오늘의 메뉴는...";
 }
 
-function changeP() {
-    document.querySelector('p').innerHTML = "<p>먹고 싶은 메뉴를 클릭해주세요.</p>";
-    document.querySelector('p').textContent = "👇👇👇";
-}
-
 function randomItem(a) {
     const random = Math.floor(Math.random() * a.length);
     return a[random];
@@ -26,30 +21,30 @@ document.getElementById("btn3").addEventListener('click', reactionBtn3);
 document.getElementById("btn4").addEventListener('click', reactionBtn4);
 
 
-function deletebtns() {
-    const btns = document.getElementById("btns");
-    btns.remove();
-}
-
 function reactionBtn1() {
     changeTitle();
-    changeP()
-    deletebtns();
-    hansik = randomItem(hansik);
+    let hansic = randomItem(hansik);
+    const emojiH2 = document.createElement('h2');
     const newH2 = document.createElement('h2');
-    const newText = document.createTextNode(`"${hansik}"`);
+    const newemoji = document.createTextNode("👇 👇 👇")
+    const newText = document.createTextNode(`"${hansic}"`);
+    emojiH2.appendChild(newemoji);
     newH2.appendChild(newText);
+    document.body.appendChild(emojiH2);
     document.body.appendChild(newH2);
+    console.log(hansic);
 }
 
 
 function reactionBtn2() {
     changeTitle();
-    changeP()
-    deletebtns();
-    jungsik = randomItem(jungsik);
+    let jungsic = randomItem(jungsik);
+    const emojiH2 = document.createElement('h2');
+    const newemoji = document.createTextNode("👇 👇 👇")
     const newH2 = document.createElement('h2');
-    const newText = document.createTextNode(`"${jungsik}"`);
+    const newText = document.createTextNode(`"${jungsic}"`);
+    emojiH2.appendChild(newemoji);
+    document.body.appendChild(emojiH2);
     newH2.appendChild(newText);
     document.body.appendChild(newH2);
 
@@ -58,11 +53,13 @@ function reactionBtn2() {
 
 function reactionBtn3() {
     changeTitle();
-    changeP()
-    deletebtns();
-    illsik = randomItem(illsik);
+    let illsic = randomItem(illsik);
+    const emojiH2 = document.createElement('h2');
+    const newemoji = document.createTextNode("👇 👇 👇")
     const newH2 = document.createElement('h2');
-    const newText = document.createTextNode(`"${illsik}"`);
+    const newText = document.createTextNode(`"${illsic}"`);
+    emojiH2.appendChild(newemoji);
+    document.body.appendChild(emojiH2);
     newH2.appendChild(newText);
     document.body.appendChild(newH2);
 
@@ -71,11 +68,13 @@ function reactionBtn3() {
 
 function reactionBtn4() {
     changeTitle();
-    changeP()
-    deletebtns();
-    yangsik = randomItem(yangsik);
+    let yangsic = randomItem(yangsik);
+    const emojiH2 = document.createElement('h2');
+    const newemoji = document.createTextNode("👇 👇 👇")
     const newH2 = document.createElement('h2');
-    const newText = document.createTextNode(`"${yangsik}"`);
+    const newText = document.createTextNode(`"${yangsic}"`);
+    emojiH2.appendChild(newemoji);
+    document.body.appendChild(emojiH2);
     newH2.appendChild(newText);
     document.body.appendChild(newH2);
 
