@@ -15,14 +15,11 @@ let food = {
 }
 
 const Result = document.getElementById('result');
-const target = document.getElementsByClassName('result-box');
 
 function randomItem(a) {
     const random = Math.floor(Math.random() * a.length);
     return a[random];
 }
-
-console.log(document.getElementsByClassName('result-box').style.visibility);
 
 document.getElementById("btn1").addEventListener('click', reactionBtn1);
 document.getElementById("btn2").addEventListener('click', reactionBtn2);
