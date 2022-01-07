@@ -15,6 +15,7 @@ let food = {
 }
 
 const Result = document.getElementById('result');
+const target = document.getElementById('result-box');
 
 function randomItem(a) {
     const random = Math.floor(Math.random() * a.length);
@@ -28,24 +29,28 @@ document.getElementById("btn4").addEventListener('click', reactionBtn4);
 
 
 function reactionBtn1() {
+    target.style.visibility = 'visible';
     let hansic = randomItem(food.hansik.menu);
     Result.innerText = `✨ ${hansic} ✨`
 }
 
 
 function reactionBtn2() {
+    target.style.visibility = 'visible';
     let jungsic = randomItem(food.jungsik.menu);
     Result.innerText = `✨ ${jungsic} ✨`
 }
 
 
 function reactionBtn3() {
+    target.style.visibility = 'visible';
     let illsic = randomItem(food.illsik.menu);
     Result.innerText = `✨ ${illsic} ✨`
 }
 
 
 function reactionBtn4() {
+    target.style.visibility = 'visible';
     let yangsic = randomItem(food.yangsik.menu);
     Result.innerText = `✨ ${yangsic} ✨`
 }
